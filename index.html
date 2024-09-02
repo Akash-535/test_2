@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>test</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        MidGrey: '#4F6367',
+                        RegentGrey: '#7A9E9F',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+        * {
+            font-family: "Roboto Slab", serif;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="container flex justify-between relative z-10">
+            <div class="logo">
+                <img src="./assets/images/svg/logo.svg" alt="logo">
+            </div>
+            <div class="flex items-center gap-5">
+                <button
+                    class="lg:px-7 px-2.5 lg:py-4 py-1.5 border-2 border-RegentGrey bg-RegentGrey rounded-full text-white lg:text-base text-[8px] hover:bg-white hover:text-RegentGrey duration-300 hover:ease-linear">Require
+                    Resources?</button>
+                <button
+                    class="lg:px-7 px-2.5 lg:py-4 py-1.5 border-2 border-RegentGrey bg-RegentGrey rounded-full text-white lg:text-base text-[8px] hover:bg-white hover:text-RegentGrey duration-300 hover:ease-linear">Provide
+                    Resources?</button>
+            </div>
+        </div>
+        <div class="row  flex justify-between lg:flex-row flex-col">
+            <div class="lg:w-6/12 w-full relative -top-20">
+                <div class="bg-MidGrey lg:min-h-screen h-[207px] w-full">
+                    <div class="hero_img">
+                        <img class="absolute lg:top-40 top-28 lg:-end-28 z-10 " src="./assets/images/png/hero_image.png"
+                            alt="image">
+                        <img class="absolute lg:top-36 top-[120px]  lg:-end-20  end-2  max-sm:max-w-[52px]"
+                            src="./assets/images/svg/dots.svg" alt="">
+                        <!-- <img class="lg:hidden -bottom-0 left-0 max-w-[41px] absolute"
+                            src="./assets/images/svg/down_arrows.svg" alt="down"> -->
+                    </div>
+                </div>
+            </div>
+            <div
+                class="lg:w-6/12 w-full relative  flex flex-col justify-center items-center lg:pt-0 sm:pt-64 pt-24 px-10">
+                <img class="  max-lg:hidden top-0 absolute end-0" src="./assets/images/svg/down_arrows.svg" alt="">
+                <h1 class="lg:text-[46px] text-[30px] max-w-[419px] mx-auto">Introductions that save you money.</h1>
+                <p class="max-w-[409px] mx-auto lg:text-base max-lg:text-center text-sm font-light">Avoid inflated
+                    costs, keep your
+                    identity hidden
+                    while searching for
+                    Partners, and get rewarded for paying on-time.</p>
+                <div class="pt-11"><button
+                        class="py-4 px-5 border border-RegentGrey rounded-full bg-RegentGrey  text-white lg:text-base text-[8px] hover:bg-white hover:text-RegentGrey duration-300 hover:ease-linear">Publish
+                        your
+                        Requirement</button></div>
+                <img class="max-lg:hidden bottom-0 absolute end-0" src="./assets/images/svg/scrooldown_img.svg"
+                    alt="scroll">
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
